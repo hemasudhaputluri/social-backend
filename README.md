@@ -1,2 +1,1 @@
-# social-backend
-This is the backend for a social media website and mobile app.
+this is dev branch, this will be deleted after some time after we have working model
