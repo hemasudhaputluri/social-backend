@@ -1,6 +1,6 @@
 name: ESLint  # Name of the workflow
 
-on: [push, pull_request]  # When to run this workflow
+on: [pull_request]  # When to run this workflow
 
 jobs:
   lint:
