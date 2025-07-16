@@ -1,0 +1,19 @@
+name: ESLint  # Name of the workflow
+
+on: [push, pull_request]  # When to run this workflow
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4  # Checks out your repo code
+
+      - uses: actions/setup-node@v4  # Sets up Node.js
+        with:
+          node-version: 22  # You requested Node 22
+
+      - run: npm install  # Installs dependencies (ok for dev)
+
+      - run: npx eslint .  # Runs ESLint
+
